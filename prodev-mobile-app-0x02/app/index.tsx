@@ -1,13 +1,5 @@
-import {
-  Dimensions,
-  Image,
-  ImageBackground,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { Text, View, StyleSheet, Image, ImageBackground, Dimensions, TouchableOpacity } from "react-native";
+import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
@@ -24,23 +16,15 @@ export default function Index() {
             </View>
 
             <View style={styles.textGroup}>
-              <Text style={styles.textLarge}>
-                Find your favorite place here
-              </Text>
-              <Text style={styles.textSmall}>
-                The best prices for over 2
-              </Text>
-              <Text style={styles.textSmall}>
-                million properties worldwide
-              </Text>
+              <Text style={styles.textLarge}>Find your favorite place here</Text>
+              <Text style={styles.textSmall}>The best prices for over 2 </Text>
+              <Text style={styles.textSmall}>million properties worldwide</Text>
             </View>
 
             <View style={{ position: "absolute", bottom: 0, width: "100%" }}>
               <View style={styles.buttonGroup}>
                 <TouchableOpacity style={styles.button}>
-                  <Text style={{ ...styles.textSmall, color: "black" }}>
-                    Join here
-                  </Text>
+                  <Text style={{ ...styles.textSmall, color: "black" }}>Join here</Text>
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.transparentButton}>
@@ -49,9 +33,7 @@ export default function Index() {
               </View>
 
               <View style={{ alignItems: "center", paddingVertical: 20 }}>
-                <Text style={{ color: "white" }}>
-                  Continue to home
-                </Text>
+                <Text style={{ color: "white" }}>Continue to home</Text>
               </View>
             </View>
           </View>
@@ -120,4 +102,3 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
 });
-
